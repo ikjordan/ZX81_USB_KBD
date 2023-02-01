@@ -19,14 +19,14 @@ The code must run automatically on power up. In addition the usual auto-mount of
 
 Both `boot.py` and `code.py` should be copied to the root directory of the CIRCUITPY drive.
 
-## Known issues
-The keyboard has been tested with several ZX81 emulators. On most emulators the keyboard functions correctly. On two emulators [EightyOne](https://github.com/charlierobson/EightyOne) and Spud81 shift period is parsed as > rather than comma. This means that the keyboard cannot currently be used to create a comma for those emulators.
+## Notes
+Several ZX81 emulators have been tested. Most decode shift period as a comma. However at least two emulators do not, with shift period generating greater than.
 
-A later version of this code may address this by checking the shift status and explicitly sending a comma when shift and period is pressed.
+To support all emulators the shift state is tracked and a comma key state is explictly sent when shift period is pressed.
 
 # Why?
-The ZX81 keyboard is not the greatest for fast typing. Also it only posesses a sub-set of the keys needed to drive a modern OS. The reasons for doing this were:
-1) It can be fun to control a ZX81 emulator with an authentic keyboard.
+The ZX81 keyboard is not the greatest for fast typing. Also it only posesses a sub-set of the keys needed to drive a modern OS. The reasons for creating this project were:
+1) It can be fun to control a ZX81 emulator with an authentic keyboard
 2) It makes a change for me to code for a real time application in Python, rather than C
 
 It is also amusing that a $3 dollar part, running at 125MHz, with 264kB of RAM and 2MB of Flash, is being used to control the keyboard of the ZX81, when originally the ZX81 processor ran at 3.25MHz, and the base ZX81 was initially sold with 1kB of RAM!

@@ -67,6 +67,9 @@ key_ZX81 = {0 : Keycode.FIVE,
 event = keypad.Event()
 
 #print ("Starting...")
+shift = False       # True if shift pressed
+comma = False       # True if comma sent instead of shift period
+
 while True:
     if km.events.get_into(event):
         # Convert the event to a specific key
@@ -74,6 +77,24 @@ while True:
         
         if key_code != 0:
             if event.pressed:
-                kbd.press(key_code)
+                # Need to translate shift period to comma
+                if key_code == Keycode.LEFT_SHIFT:
+                    shift = True
+                if key_code == Keycode.PERIOD and shift:
+                    comma = True
+                    # Release shift and send comma
+                    kbd.release(Keycode.LEFT_SHIFT)
+                    kbd.press(Keycode.COMMA)
+                else:
+                    kbd.press(key_code)
             else:
-                kbd.release(key_code)
+                if key_code == Keycode.LEFT_SHIFT:
+                    shift = False
+                if key_code == Keycode.PERIOD and comma:
+                    comma = False
+                    kbd.release(Keycode.COMMA)
+                    #Restore the shift state if needed
+                    if shift:
+                        kbd.press(Keycode.LEFT_SHIFT)
+                else:
+                    kbd.release(key_code)
