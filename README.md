@@ -13,10 +13,10 @@ Replacement ZX81 keyboard membranes are readily available from sites such as eba
 ### ZX81 Keyboard connectors
 The ZX81 keyboard membrane connects through one 5 way and one 8 way connector. These can be purchased from Sell My Retro or ebay
 ### Raspberry Pi Pico
-To minimise soldering a Pi Pico H with male headers attached can be used
+To minimise soldering, a Pi Pico H with male headers attached can be used
 
 ### Screws, Rubber feet, USB cable
-Five 2.5x12 or 2.5x14 screws are needed to join the bottom and top halves of the case. To finish the effect ZX81 feet pads to cover the screws can be found on ebay or Sell My Retro
+Five 2.5x12 or 2.5x14 screws are needed to join the bottom and top halves of the case. To finish the effect, ZX81 replacement rubber feet to cover the screws can be found on ebay or Sell My Retro
 
 A micro to USB A cable makes the connection between the Pico and the Windows or Linux host. The Pico is powered by the host computer
 ## Connecting the keyboard membrane
