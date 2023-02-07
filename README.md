@@ -3,7 +3,7 @@ This CircuitPython code for the Raspberry Pi Pico 2040 allows a [Sinclair ZX81](
 
 **A new keyboard matrix and a 3d print of the ZX81 case was used, so no ZX81 were harmed in the production of this project**
 
-<a href="ZX81.jpg"><img src="ZX81.jpg" height="300"/></a>
+<a href="zx81.jpg"><img src="zx81.jpg" height="300"/></a>
 # Resources
 The following resources are needed to complete this project
 ### ZX81 Case
