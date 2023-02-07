@@ -33,9 +33,12 @@ The code must run automatically on power up. In addition the usual auto-mount of
 Both `boot.py` and `code.py` should be copied to the root directory of the CIRCUITPY drive
 
 ## Notes
+### Emulators
 Several ZX81 emulators have been tested. Most decode shift period as a comma. However at least two emulators do not, with shift period generating greater than
 
 To support all emulators the shift state is tracked and a comma key state is explicitly sent in place of shift period
+### Colouring the case
+The ZX81 logo on the case is coloured Red. An Edding 780 Red (002) marker can be used to achieve this
 
 # Why?
 The ZX81 keyboard is not the greatest for fast typing. Also it only possesses a sub-set of the keys needed to drive a modern OS. The reasons for creating this project were:
