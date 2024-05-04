@@ -41,19 +41,19 @@ Both `boot.py` and `code.py` should be copied to the root directory of the CIRCU
 ### Directory Structure
 After successful installation of the libraries and python files, the directory structure on the Pico should look as follows:
 
-root  
-├──lib  
-|   ├──adafruit_hid  
-|   |   ├──consumer_control.mpy  
-|   |   ├──consumer_control_code.py  
-|   |   ├──keyboard.mpy  
-|   |   ├──keyboard_layout_base.mpy  
-|   |   ├──keyboard_layout_us.mpy  
-|   |   ├──mouse.mpy  
-|   |   └──__init__.mpy  
-|   └──adafruit_matrixkeypad.mpy  
-├──boot.py  
-└──code.py  
+    root
+    ├── lib
+    │   ├── adafruit_hid
+    │   │   ├── consumer_control.mpy
+    │   │   ├── consumer_control_code.py
+    │   │   ├── keyboard.mpy
+    │   │   ├── keyboard_layout_base.mpy
+    │   │   ├── keyboard_layout_us.mpy
+    │   │   ├── mouse.mpy
+    │   │   └── __init__.mpy
+    │   └── adafruit_matrixkeypad.mpy
+    ├── boot.py
+    └── code.py
 
 ### Connections
 An image of colour coded connections
