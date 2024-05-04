@@ -45,10 +45,11 @@ After successful installation of the libraries and python files, the directory s
     ├── lib
     │   ├── adafruit_hid
     │   │   ├── consumer_control.mpy
-    │   │   ├── consumer_control_code.py
+    │   │   ├── consumer_control_code.mpy
     │   │   ├── keyboard.mpy
     │   │   ├── keyboard_layout_base.mpy
     │   │   ├── keyboard_layout_us.mpy
+    │   │   ├── keycode.mpy
     │   │   ├── mouse.mpy
     │   │   └── __init__.mpy
     │   └── adafruit_matrixkeypad.mpy
