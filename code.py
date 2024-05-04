@@ -11,7 +11,7 @@ kbd = Keyboard(usb_hid.devices)
 
 # 8 Rows 5 Columns
 km = keypad.KeyMatrix(
-    row_pins=(board.GP5, board.GP6, board.GP7, board.GP8, board.GP9, board.GP10, board.GP11, board.GP12),
+    row_pins=(board.GP5, board.GP6, board.GP7, board.GP9, board.GP10, board.GP8, board.GP11, board.GP12),
     column_pins=(board.GP0, board.GP1, board.GP2, board.GP3, board.GP4),
 )
 

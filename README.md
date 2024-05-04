@@ -3,7 +3,10 @@ This CircuitPython code for the Raspberry Pi Pico 2040 allows a [Sinclair ZX81](
 
 **A new keyboard matrix and a 3d print of the ZX81 case was used, so no ZX81 were harmed in the production of this project**
 
-<a href="zx81.jpg"><img src="zx81.jpg" height="300"/></a>
+<p align="middle">
+<img src="zx81.jpg" width="70%" />
+</p>
+
 # Resources
 The following resources are needed to complete this project
 ### ZX81 Case
@@ -26,11 +29,37 @@ No diodes are used in the circuit. The keyboard functions well without them
 ## Software Installation
 The project uses CircuitPython, and the Adafruit Matrix Keypad library. Instructions for installation can be found [here](https://learn.adafruit.com/matrix-keypad/python-circuitpython).
 
+The Adafruit Matrix Keypad library depends on the Adafruit HID Library. Instructions for installation of this library can be found [here](https://learn.adafruit.com/pico-four-key-macropad/installing-libraries).
+
 The code must run automatically on power up. In addition the usual auto-mount of the CIRCUITPY drive should be disabled.
 
 `boot.py` is used to prevent automount. Using `code.py` as the filename for the code file ensures that the code will run on power on (see [here](https://learn.adafruit.com/customizing-usb-devices-in-circuitpython/circuitpy-midi-serial))
 
 Both `boot.py` and `code.py` should be copied to the root directory of the CIRCUITPY drive
+
+## Trouble shooting
+### Directory Structure
+After successful installation of the libraries and python files, the directory structure on the Pico should look as follows:
+
+root  
+├──lib  
+|   ├──adafruit_hid  
+|   |   ├──consumer_control.mpy  
+|   |   ├──consumer_control_code.py  
+|   |   ├──keyboard.mpy  
+|   |   ├──keyboard_layout_base.mpy  
+|   |   ├──keyboard_layout_us.mpy  
+|   |   ├──mouse.mpy  
+|   |   └──__init__.mpy  
+|   └──adafruit_matrixkeypad.mpy  
+├──boot.py  
+└──code.py  
+
+### Connections
+An image of colour coded connections
+<p align="middle">
+<img src="wiring.jpg" width="70%" />
+</p>
 
 ## Notes
 ### Emulators
