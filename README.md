@@ -1,5 +1,5 @@
 # ZX81_USB_KBD
-This CircuitPython code for the Raspberry Pi Pico 2040 allows a [Sinclair ZX81](https://en.wikipedia.org/wiki/Sinclair_ZX81) keyboard matrix to be used as the basis for a USB keyboard that can be used in Linux or MS Windows.
+This CircuitPython code for the Raspberry Pi Pico 2040 allows a [Sinclair ZX81](https://en.wikipedia.org/wiki/Sinclair_ZX81) keyboard matrix to be used as the basis for a USB keyboard that can be used in Linux, MS Windows or for [picozx81](https://github.com/ikjordan/picozx81).
 
 **A new keyboard matrix and a 3d print of the ZX81 case was used, so no ZX81 were harmed in the production of this project**
 
@@ -67,6 +67,8 @@ An image of colour coded connections
 Several ZX81 emulators have been tested. Most decode shift period as a comma. However at least two emulators do not, with shift period generating greater than
 
 To support all emulators the shift state is tracked and a comma key state is explicitly sent in place of shift period
+
+[picozx81](https://github.com/ikjordan/picozx81) is designed so that it can be completely controlled by this keyboard
 ### Colouring the case
 The ZX81 logo on the case is coloured Red. An Edding 780 Red (002) marker can be used to achieve this
 
@@ -74,5 +76,6 @@ The ZX81 logo on the case is coloured Red. An Edding 780 Red (002) marker can be
 The ZX81 keyboard is not the greatest for fast typing. Also it only possesses a sub-set of the keys needed to drive a modern OS. The reasons for creating this project were:
 1) It can be fun to control a ZX81 emulator with an authentic keyboard
 2) It makes a change for me to code for a real time application in Python, rather than C
+3) As a realistic fully functioning keyboard for picozx81
 
 It is also amusing that a $3 dollar part, running at 125MHz, with 264kB of RAM and 2MB of Flash, is being used to control the keyboard of the ZX81, when originally the ZX81 processor ran at 3.25MHz, and the base ZX81 was initially sold with 1kB of RAM!
