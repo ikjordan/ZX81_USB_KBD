@@ -62,6 +62,14 @@ An image of colour coded connections
 <img src="wiring.jpg" width="70%" />
 </p>
 
+### Uploading new versions
+After placing `boot.py` into the root directory, perform the following if you wish to update files on the Pico
+1. Connect to Thonny and stop program execution by pressing the red square
+2. Enter the following into the shell:  
+    a)`import storage`  
+    b)`storage.remount("/", readonly=False)`
+3. You will now be able to save updates back to the Pico
+
 ## Notes
 ### Emulators
 Several ZX81 emulators have been tested. Most decode shift period as a comma. However at least two emulators do not, with shift period generating greater than
