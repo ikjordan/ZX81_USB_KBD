@@ -20,7 +20,7 @@ key_ZX81 = {0 : Keycode.FIVE,
             2 : Keycode.THREE,
             3 : Keycode.TWO,
             4 : Keycode.ONE,
-            
+
             5 : Keycode.T,
             6 : Keycode.R,
             7 : Keycode.E,
@@ -32,13 +32,13 @@ key_ZX81 = {0 : Keycode.FIVE,
             12 : Keycode.EIGHT,
             13 : Keycode.NINE,
             14 : Keycode.ZERO,
-            
+
             15 : Keycode.Y,
             16 : Keycode.U,
             17 : Keycode.I,
             18 : Keycode.O,
             19 : Keycode.P,
-            
+
             20 : Keycode.V,
             21 : Keycode.C,
             22 : Keycode.X,
@@ -50,13 +50,13 @@ key_ZX81 = {0 : Keycode.FIVE,
             27 : Keycode.D,
             28 : Keycode.S,
             29 : Keycode.A,
-            
+
             30 : Keycode.H,
             31 : Keycode.J,
             32 : Keycode.K,
             33 : Keycode.L,
             34 : Keycode.ENTER,
-            
+
             35 : Keycode.B,
             36 : Keycode.N,
             37 : Keycode.M,
@@ -74,7 +74,7 @@ while True:
     if km.events.get_into(event):
         # Convert the event to a specific key
         key_code = key_ZX81.get(event.key_number, 0)
-        
+
         if key_code != 0:
             if event.pressed:
                 # Need to translate shift period to comma
