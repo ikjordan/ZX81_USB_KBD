@@ -72,7 +72,8 @@ Perform the following if you later wish to update files on the Pico:
 3. You will now be able to save updates back to the Pico
 
 **Note:** The steps described above may not be supported by later versions of CircuitPython.
-As a last resort, it is always possible to clear the flash using [nuke](https://github.com/raspberrypi/pico-examples/tree/master/flash/nuke) from the Pico SDK.
+As a last resort, it is always possible to clear the flash by pressing the BOOTSEL button on power-up and copying
+the [official nuke uf2](https://datasheets.raspberrypi.com/soft/flash_nuke.uf2) to the board.
 Then reinstall CircuitPython and the project files as described [above](#directory-structure)
 
 # Optional Generation of Function key presses
